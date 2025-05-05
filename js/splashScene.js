@@ -2,7 +2,7 @@
 
 // Copyright (c) 2020 Mr. Coxall All rights reserved
 //
-// Created by: Trisha ray
+// Created by: Joyce Nkengbeza
 // Created on: April 2025
 //This is the Splash Scene
 
