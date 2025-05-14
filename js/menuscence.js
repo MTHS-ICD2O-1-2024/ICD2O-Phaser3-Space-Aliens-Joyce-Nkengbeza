@@ -1,7 +1,5 @@
 /*global Phaser*/
 
-
-
 // Copyright (c) 2020 Mr. Coxall All rights reserved
 
 //
@@ -12,46 +10,22 @@
 
 //This is the Menu Scene
 
-
-
 class MenuScene extends Phaser.Scene {
-
   constructor() {
-
-    super({ key: 'menuScene' })
-
+    super({ key: "menuScene" })
   }
-
-
 
   init(data) {
-
-    this.cameras.main.setBackgroundColor('#ffffff')
-
+    this.cameras.main.setBackgroundColor("#ffffff")
   }
-
-
 
   preload() {
-
-    console.log('Menu Scene')
-
+    console.log("Menu Scene")
   }
 
+  creat(data) {}
 
-
-  creat(data) {
-
-  }
-
-
-
-  update(time, delta) {
-
-  }
-
+  update(time, delta) {}
 }
-
-
 
 export default MenuScene
