@@ -1,57 +1,57 @@
 /*global Phaser*/
 
-// Copyright (c) 2020 Mr. Coxall All rights reserved//
+
+
+// Copyright (c) 2020 Mr. Coxall All rights reserved
+
+//
 
 // Created by: Joyce Nkengbeza
 
 // Created on: April 2025
 
-// This file contains the JS functions for index.html
+//This is the Game Scene
 
-import SplashScene from "./splashScene.js"
 
-import TitleScene from "./titleScene.js"
 
-import MenuScene from "./menuScene.js"
+class GameScene extends Phaser.Scene {
 
-//Our game scene
+  constructor() {
 
-const splashScene = new SplashScene()
+    super({ key: 'gameScene' })
 
-const titleScene = new TitleScene()
+  }
 
-const menuScene = new MenuScene()
 
-//*Game scene*/
 
-const config = {
-  type: Phaser.AUTO,
+  init(data) {
 
-  width: 1920,
+    this.cameras.main.setBackgroundColor('#ffffff')
 
-  height: 1080,
+  }
 
-  backgroundColor: 0xffffff,
 
-  scale: {
-    mode: Phaser.Scale.FIT,
 
-    autoCenter: Phaser.Scale.CENTER_BOTH,
-  },
+  preload() {
+
+    console.log('Game Scene')
+
+  }
+
+
+
+  create(data) {
+
+  }
+
+
+
+  update(time, delta) {
+
+  }
+
 }
 
-const game = new Phaser.Game(config)
 
-//load scenes
 
-//NOTE: remember any "key" is global and CAN NOT be reused!
-
-game.scene.add("splashScene", splashScene)
-
-game.scene.add("titleScene", titleScene)
-
-game.scene.add("menuScene", menuScene)
-
-//start title
-
-game.scene.start("splashScene")
+export default GameScene
